@@ -3,7 +3,7 @@
 #include "person_dao.h"
 
 int main() {    
-    sqlite3 *db = openDb("../sqlite3/sqlite_demo_db");
+    sqlite3 *db = openDb("./sqlite_demo.db");
 
     if (isExistsPersonTable(db)) {
         deleteAllPersons(db);
